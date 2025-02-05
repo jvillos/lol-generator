@@ -1,8 +1,13 @@
-import React from 'react'
+import '../App.css'
 
-function Button() {
+interface ButtonProps{
+    text: string;
+    onClick?: () => void;
+}
+
+function Button({text,onClick}:ButtonProps) {
   return (
-    <div>Button</div>
+    <button id="new-joke" className="button" role="button" onClick={onClick}>{text}</button>
   )
 }
 

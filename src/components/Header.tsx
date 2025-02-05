@@ -1,8 +1,8 @@
-import React from 'react'
+import '../App.css'
 
 function Header() {
   return (
-    <div>Header</div>
+    <h1>LOL Generator</h1>
   )
 }
 
