@@ -4,6 +4,7 @@ import Button from './Button'
 import { useState } from 'react'
 import { useEffect } from 'react'
 import RandomGif from './RandomGif';
+import errorImage from '../assets/sad-pikachu.gif'
 
 export interface JokeDisplayProps {
   joke: Joke;
@@ -29,6 +30,12 @@ function JokeDisplay({ joke }: JokeDisplayProps) {
                 `}>
         <h5>{joke.punchline}</h5>
         <RandomGif />
+      </div>
+      <div className={`
+                ${joke ? "displaySection" : ""}
+                `}>
+              <img src={errorImage} alt="Pikachu" />
+
       </div>
     </>
   )
