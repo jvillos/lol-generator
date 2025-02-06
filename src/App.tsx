@@ -8,6 +8,7 @@ import { getRandomJoke } from './services/jokeApi'
 
 function App() {
   const [joke, setJoke] = useState<Joke | null>(null)
+  
 
   const onClickHandler = async () => {
     getRandomJoke().then((joke)=>{
