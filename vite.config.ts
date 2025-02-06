@@ -6,6 +6,6 @@ export default defineConfig({
   plugins: [react()],
   base: '/lol-generator/', // Reemplaza 'lol-generator' con el nombre de tu repositorio
   build: {
-    outDir: 'dist', // Carpeta de salida configurada como 'docs'
+    outDir: 'docs', // Carpeta de salida configurada como 'docs'
   },
 })
