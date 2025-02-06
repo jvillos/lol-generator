@@ -26,13 +26,13 @@ function JokeDisplay({ joke }: JokeDisplayProps) {
       <h5>{joke.setup}</h5>
       <Button text='Show me' onClick={onClickHandlerDisplay}/>
       <div className={`
-                ${!clickedButton ? "displaySection" : ""}
+                ${!clickedButton ? "hidden" : ""}
                 `}>
         <h5>{joke.punchline}</h5>
         <RandomGif />
       </div>
       <div className={`
-                ${joke ? "displaySection" : ""}
+                ${joke ? "hidden" : ""}
                 `}>
               <img src={errorImage} alt="Pikachu" />
 
