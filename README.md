@@ -1,3 +1,9 @@
+# Here is my lol generator app made with React and Typescript
+
+![frontpage](src/assets/screenshot.png)
+
+Click [HERE](https://jvillos.github.io/lol-generator/), press the button and have fun!
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -48,3 +54,6 @@ export default tseslint.config({
   },
 })
 ```
+# Links of interest
+
+- Github pages: https://jvillos.github.io/lol-generator/
