@@ -11,21 +11,21 @@ export interface JokeDisplayProps {
 }
 
 function JokeDisplay({ joke }: JokeDisplayProps) {
-  const [clickedButton, setClickedButton] = useState<boolean>(false);
+  const [showPunchline, setShowPunchline] = useState<boolean>(false);
 
   useEffect(() => {
-    setClickedButton(false); 
+    setShowPunchline(false); 
   }, [joke]);
 
   const onClickHandlerDisplay = () => {
-      setClickedButton(true)
+      setShowPunchline(true)
     }
 
   return (
     <>
       <h5>{joke.setup}</h5>
       <Button text='Show me' onClick={onClickHandlerDisplay}/>
-      {clickedButton && 
+      {showPunchline && 
         <div>
           <h5>{joke.punchline}</h5>
           <RandomGif />
