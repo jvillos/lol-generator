@@ -25,18 +25,14 @@ function JokeDisplay({ joke }: JokeDisplayProps) {
     <>
       <h5>{joke.setup}</h5>
       <Button text='Show me' onClick={onClickHandlerDisplay}/>
-      <div className={`
-                ${!clickedButton ? "hidden" : ""}
-                `}>
-        <h5>{joke.punchline}</h5>
-        <RandomGif />
-      </div>
-      <div className={`
-                ${joke ? "hidden" : ""}
-                `}>
-              <img src={errorImage} alt="Pikachu" />
-
-      </div>
+      {clickedButton && 
+        <div>
+          <h5>{joke.punchline}</h5>
+          <RandomGif />
+        </div>
+      }
+      {!joke && <div><img src={errorImage} alt="Pikachu" /></div>}
+      
     </>
   )
 }
